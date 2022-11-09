@@ -10,7 +10,7 @@ namespace LogicalProblem
             while (flag)
             {
                 Console.WriteLine("Welcome to Logical Programming Problems");
-                Console.WriteLine("1. Fibonaccis Series" + "\n" + "2. Perfect Number" + "\n" + "3. Prime Number " + "\n" + "4. Exit");
+                Console.WriteLine("1. Fibonaccis Series" + "\n" + "2. Perfect Number" + "\n" + "3. Prime Number " + "\n" + "4. Reverse Number " + "\n" + "5. Exit");
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch (check)
                 {
@@ -25,6 +25,10 @@ namespace LogicalProblem
                     case 3:
                         PrimeNumber prime = new PrimeNumber();
                         prime.Prime(5);
+                        break;
+                    case 4:
+                        ReverseNumber reverse = new ReverseNumber();
+                        reverse.Reverse(1432);
                         break;
                     default:
                         flag = false;
