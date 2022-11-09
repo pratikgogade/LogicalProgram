@@ -1,6 +1,5 @@
-﻿
-using Learning;
-
+﻿using Learning;
+using System;
 namespace LogicalProblem
 
 {
@@ -12,7 +11,9 @@ namespace LogicalProblem
             while (flag)
             {
                 Console.WriteLine("Welcome to Logical Programming Problems");
-                Console.WriteLine("1. Fibonaccis Series" + "\n" + "2. Perfect Number" + "\n" + "3. Prime Number " + "\n" + "4. Reverse Number " + "\n" + "5. Coupon Number" + "\n" + "6. Temperature Conversion" + "\n" + "7. Day of Week" + "\n" + "8. Stop Watch" + "\n" + "9. Exit");
+                Console.WriteLine("1. Fibonaccis Series" + "\n" + "2. Perfect Number" + "\n" + "3. Prime Number " + "\n" + "4. Reverse Number "
+                    + "\n" + "5. Coupon Number" + "\n" + "6. Temperature Conversion" + "\n" + "7. Day of Week" + "\n" + "8. Stop Watch"
+                    + "\n" + "9. Vending Machine" + "\n" + "10. Exit");
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch (check)
                 {
@@ -45,6 +46,11 @@ namespace LogicalProblem
                     case 8:
                         StopWatch watch = new StopWatch();
                         watch.Start();
+                        break;
+                    case 9:
+                        VendingMachine vending = new VendingMachine();
+                        vending.Note(2250);
+                        vending.Print();
                         break;
                     default:
                         flag = false;
