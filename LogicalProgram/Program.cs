@@ -10,7 +10,7 @@ namespace LogicalProblem
             while (flag)
             {
                 Console.WriteLine("Welcome to Logical Programming Problems");
-                Console.WriteLine("1. Fibonaccis Series" + "\n" + "2. Perfect Number" + "\n" + "3. Prime Number " + "\n" + "4. Reverse Number " + "\n" + "5. Coupon Number" + "\n" + "6. Exit");
+                Console.WriteLine("1. Fibonaccis Series" + "\n" + "2. Perfect Number" + "\n" + "3. Prime Number " + "\n" + "4. Reverse Number " + "\n" + "5. Coupon Number" + "\n" + "6. Temperature Conversion" + "\n" + "7. Exit");
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch (check)
                 {
@@ -32,6 +32,9 @@ namespace LogicalProblem
                         break;
                     case 5:
                         CouponNumber.GenerateCoupon(10);
+                        break;
+                    case 6:
+                        TemperatureConversion.Temperature();
                         break;
                     default:
                         flag = false;
